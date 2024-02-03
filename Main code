@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYM</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            font-family: cursive;
+            margin: 0px;
+            padding: 0px;
+            background: url('https://cdn.pixabay.com/photo/2016/11/22/22/25/abs-1850926_640.jpg');
+            background-repeat: no-repeat;
+            background-size: 2000px 1000px;
+        }
+
+        .left {
+            display: inline-block;
+            position: absolute;
+            top: 20px;
+            left: 0px;
+            /* border: 2px solid red; */
+        }
+
+        .mid {
+            /* border: 2px solid green; */
+            display: block;
+            width: 48%;
+            margin: 20px auto;
+        }
+
+        .right {
+            display: inline-block;
+            position: absolute;
+            top: 20px;
+            right: 0px;
+            /* border: 2px solid blue; */
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 21px;
+        }
+
+        .navbar li a {
+            box-sizing: border-box;
+            color: white;
+            text-decoration: none;
+            padding: 34px 13px;
+
+        }
+
+        .navbar li a:hover {
+            text-decoration: underline;
+            color: aquamarine;
+
+        }
+
+        #Fitness {
+            color: antiquewhite;
+            text-align: center;
+        }
+
+        .left img {
+            width: 100px;
+            height: 100px;
+            border: 2px solid red;
+            filter: invert(100%);
+        }
+
+        .btn {
+            font-size: 20px;
+            color: whitesmoke;
+            background-color: black;
+            border: 2px solid grey;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            text-decoration: underline;
+            color: rgb(73, 92, 9);
+            background-color: rgb(192, 215, 215);
+            border: 3px solid rgba(255, 0, 0, 0.904);
+            font-size: 23px;
+            font-family: fantasy;
+
+        }
+
+        /* h2{
+            color: aliceblue;
+        } */
+        .container {
+            color: antiquewhite;
+            /* border: 3px solid red; */
+            margin: 127px -29px;
+            text-align: center;
+            width: 590px;
+            height: 500px
+        }
+
+        div input {
+            text-align: center;
+            width: 275px;
+            height: 33px;
+            margin: 7px;
+            border: 2px solid forestgreen;
+            border-radius: 20px;
+            background-color: #ebca9d
+        }
+
+        #sub {
+            border: 2px solid rgb(41, 227, 203);
+            border-radius: 24px;
+            font-size: 17px;
+            background-color: aquamarine;
+            cursor: pointer;
+            width: 279px;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <!-- <img src="img/dumbel.jpg.png" 
+                alt=""> -->
+            <!-- <div id="Fitness">
+                Desi Fitness -->
+            </div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+
+        </div>
+        <div class="right">
+            <button class="btn">Visit Us</button>
+            <button class="btn">Email Us</button>
+        </div>
+
+    </header>
+    <div class="container">
+        <h2>Join the best Gym of IIT KGP</h2>
+        <form action="backen.php">
+            <div>
+                <input type="text" placeholder="Enter Your Name">
+            </div>
+            <div>
+                <input type="text" placeholder="Enter Your Age">
+            </div>
+            <div>
+                <input type="text" placeholder="Enter Your Gender">
+            </div>
+            <div>
+                <input type="text" placeholder="Enter Your Hall">
+            </div>
+            <button id="sub">Submit</button>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
